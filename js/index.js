@@ -8,30 +8,3 @@ $(document).ready(function(){
       slidesToScroll: 1 // how many slides will scroll at a time
     });
   });
-
-
-//   var content = document.getElementById('q');
-//   window.addEventListener('scroll', function() {
-//   var scrolledY = window.scrollY;
-//   var scrolledX = window.scrollX;
-
-//   if (scrolledY > 350 && scrolledY < 360) {
-//     // content.style.marginTop = 150 + 'px';
-//     content.style.position = "fixed";
-//     content.style.top = scrolledY * 0.001 + 'px';
-//     // content.style.left = -(scrolledY - 625) * 0.55 + 'px';
-
-//   }
-//   if (scrolledY <= 360) {
-//     content.style.position = "initial";
-
-//   // }
-//   // if (scrolledY >= 3112) {
-
-//   //   content.style.position = "absolute";
-//   //   content.style.top = 3112 + 'px';
-
-//   }
-
-
-// });
