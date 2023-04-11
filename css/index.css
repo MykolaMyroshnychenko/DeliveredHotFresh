@@ -1,0 +1,1309 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap'); */
+/* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9'); */
+/* @font-face {
+    font-family: "Helvetica";
+    src: url("https://fontsforyou.com/fonts/h/Helvetica.ttf");
+} */
+
+@import url("https://fontsforyou.com/fonts/h/Helvetica.ttf");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+body {
+    padding-left: 165px;
+    padding-right: 165px;
+    background: black!important;
+}
+
+.wrapper {
+    background-image: url(../img/background.jpg);
+    /* background-size: 100% 1080px;  */
+    background-size: 100% 100%;
+    margin-left: -165px;
+    margin-right: -165px;
+}
+
+.header {
+    border-bottom: 2px solid #5e5d5d;
+
+
+    /* background-image: url(../img/background.jpg); */
+
+    /* position: fixed; */
+    z-index: 100;
+    width: 100%;
+    top: 0;
+} 
+
+/* .header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.header-burger {
+    display: none; /*скрываем для всех разрешений
+}
+
+@media (max-width:767px) {
+    .header-burger {
+        display: block; /*показываем бургер*/
+        /* position: absolute; 
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+    .header-burger span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+    .header-burger:before,
+    .header-burger:after {
+       content: '';
+       background-color: #fff;
+       position: absolute;
+       width: 100%;
+       height: 2px;
+       left: 0;
+    }
+    .header-burger:before {
+        top: 0;
+    }
+    .header-burger:after {
+        bottom: 0;
+    }
+
+    .header-menu{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        padding: 70px ;
+    }
+} */
+
+
+
+
+
+
+.header-body {
+    margin-left: 165px;
+    margin-right: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    /* position: relative; */
+} 
+
+.header-logo {
+    display: flex;
+    align-items: center;
+
+    /* position: relative;
+    z-index: 3; */
+}
+
+.header-logo img {
+    margin-right: 9px;
+}
+
+.header-logo-text {
+    color: #34C759;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.header-list {
+    display: flex;
+    margin-bottom: 0;
+    gap: 35px;
+
+    /* position: relative;
+    z-index: 2; */
+}
+
+.header-list li a {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 90px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    /* margin-right: 35px; */
+}
+
+.header-list li a:hover {
+    color: #34C759;
+}
+
+.header-list-menu {
+    color: #34C759!important;
+}
+
+.section-food {
+    padding-bottom: 115px;
+}
+
+.favourite-food-header {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 80px;
+}
+
+.favourite-food-header-span {
+    color: aquamarine;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 100;
+}
+
+.favourite-food-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin: 15px 445px 0 445px;
+}
+
+.favourite-food-btn {
+    height: 72px;
+    width: 220px;  
+    background: #34C759;
+    border-radius: 43px;
+    border: 0;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #1A1A1A;
+    margin: 40px auto; /*центрирование кнопки*/
+    display: block; /*центрирование кнопки*/
+}
+
+.favourite-food-information {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 280px;
+    padding-right: 280px;
+    margin-top: 70px;
+    margin-bottom: 225px;
+}
+
+.favourite-food-information-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 13px;
+    margin-bottom: 0;
+}
+
+.favourite-food-information-text a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.favourite-food-information-about {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    /* font-size: 14px; */
+    /* line-height: 60px; */
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+/* .favourite-food-information ul li {
+    height: 30px;
+} */
+
+/*----ABOUT-----*/
+
+.about {
+    margin-top: -230px;
+    background: #252525;
+    color: #fff;
+}
+
+.about-header {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 150px;
+    letter-spacing: 0.2em;    
+    color: #303030;
+    position: absolute;
+    /* margin: 40px 21.3%;
+    display: block; */
+    text-align: center;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    margin-top: 40px;
+}
+
+.about-header-small {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.2em;
+    color: #D9D9D9;
+    text-align: center;
+    padding-top: 90px;
+    position: relative;
+}
+
+.about-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #A6A6A6;
+    margin-top: 40px;
+    padding-left: 185px;
+    margin-right: 185px;
+}
+
+.about-img {
+    /* display: block;
+    margin: 0 auto; */
+    margin: 90px 187px;
+    padding-bottom: 90px;
+}
+
+.about-img-all  {
+    width: 350px!important;
+    height: 270px!important;
+    margin-right: 35px;
+}
+
+.about .arrow-prev,
+.about .arrow-next {
+   font-size: 28px;
+   position: absolute;
+   top: 50%;
+   cursor: pointer;
+   transition: all 600ms ease;
+   z-index: 99;
+ }
+
+ .about .arrow-prev:hover {transform: scale(1.4);}
+ .about .arrow-next:hover {transform: scale(1.4);}
+
+.about .arrow-prev { left: -120px; top: 100px;}
+.about .arrow-next { right: -100px; top: 100px;}
+
+/*---WORK---*/
+
+.work-header {
+   font-family: 'Helvetica';
+   font-style: normal;
+   font-weight: 900;
+   font-size: 100px;
+   line-height: 150px;
+   letter-spacing: 0.2em;    
+   color: #303030;
+   position: absolute;
+   text-align: center;
+   /* width: 1100px; */
+   left: 0; 
+   right: 0; 
+   margin: auto;
+}
+
+.work-header-small {
+   font-family: 'Helvetica';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 60px;
+   letter-spacing: 0.2em;
+   color: #D9D9D9;
+   text-align: center;
+   padding-top: 50px;
+   position: relative; 
+}
+
+.work-header-line {
+    height: 2px;
+    display: inline-block;
+    width: 60px;
+    left: 47%;
+    right: 53%;
+    position: relative;
+    background: #34C759;
+    margin-top: 30px;
+}
+
+.work {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-card {
+    width: 255px;
+    height: 206px;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 24px;
+    margin-top: 60px;
+} 
+
+.work-card:first-of-type {
+    background: #34C759;
+} 
+
+.work-card-header-first {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.275px;
+    text-transform: capitalize;
+    color: #191919;
+}
+
+.work-card-header {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.275px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.work-card-line-first {
+    height: 2px;
+    display: inline-block;
+    width: 56px;
+    position: relative;
+    background: #191919;
+    margin-top: 10px;  
+}
+
+.work-card-line {
+    height: 2px;
+    display: inline-block;
+    width: 56px;
+    position: relative;
+    background: #34C759;
+    margin-top: 10px;  
+}
+
+.work-card-text-first {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1625px;
+    color: #191919;
+    margin-top: 24px;
+}
+
+.work-card-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1625px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 24px;
+}
+
+/*---DISHES---*/
+
+.dishes {
+    margin-top: 120px;
+}
+
+.dishes-header {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 150px;
+    letter-spacing: 0.2em;    
+    color: #303030;
+    position: absolute;
+    text-align: center;
+    /* width: 1100px; */
+    left: 0; 
+    right: 0; 
+    margin: auto;
+}
+
+.dishes-header-small {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.2em;
+    color: #D9D9D9;
+    text-align: center;
+    padding-top: 50px;
+    position: relative; 
+}
+
+.dishes-line {
+    height: 2px;
+    display: inline-block;
+    width: 60px;
+    left: 47%;
+    right: 53%;
+    position: relative;
+    background: #34C759;
+    margin-top: 30px;
+}
+
+.dishes-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    /* position:relative; */
+    margin-top: 60px;
+}
+
+.dishes-card-block {
+    width: 350px;
+    height: 510px;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.dishes-card-block-img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.dishes-card-block-header {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 30px;
+    color: #D9D9D9; 
+    margin: 30px 30px 10px 30px;   
+}
+
+.dishes-card-block-header-small {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.15px;
+    color: #A4A8B2;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.dishes-card-block-header-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1625px;
+    color: #85878C;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.dishes-card-block-header-star {
+    margin-left: 30px;
+}
+
+.dishes-card-block-header-number {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    color: #B3B3B3;
+    margin-left: 11px;
+}
+
+.dishes-card-block-header-btn {
+    height: 40px;
+    width: 100px; 
+    background: #34C759;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #252525;
+    border-radius: 43px;
+    border: 0;
+    margin-left: 43px;
+}
+
+/*---CHEFS---*/
+
+.chefs {
+    margin-top: 120px;
+}
+
+.chefs-header {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 150px;
+    letter-spacing: 0.2em;    
+    color: #303030;
+    position: absolute;
+    text-align: center;
+    /* width: 1100px; */
+    left: 0; 
+    right: 0; 
+    margin: auto;
+}
+
+.chefs-header-small {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.2em;
+    color: #D9D9D9;
+    text-align: center;
+    padding-top: 50px;
+    position: relative; 
+}
+
+.chefs-line {
+    height: 2px;
+    display: inline-block;
+    width: 60px;
+    left: 47%;
+    right: 53%;
+    position: relative;
+    background: #34C759;
+    margin-top: 30px;
+}
+
+.chefs-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.chefs-block-people {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chefs-block-name {
+    margin-left: 24px;
+}
+
+.chefs-block-header {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.225px;
+    color: #FFFFFF;
+    
+}
+
+.chefs-block-header-small {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.chefs-img {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.chefs-img img {
+    border-radius: 2px;
+}
+
+/*---RECIPES---*/
+
+.recipes {
+    margin-top: 120px;
+}
+
+.recipes-header {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 150px;
+    letter-spacing: 0.2em;    
+    color: #303030;
+    position: absolute;
+    text-align: center;
+    /* width: 1100px; */
+    left: 0; 
+    right: 0; 
+    margin: auto;
+}
+
+.recipes-header-small {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.2em;
+    color: #D9D9D9;
+    text-align: center;
+    padding-top: 50px;
+    position: relative; 
+}
+
+.recipes-line {
+    height: 2px;
+    display: inline-block;
+    width: 60px;
+    left: 47%;
+    right: 53%;
+    position: relative;
+    background: #34C759;
+    margin-top: 30px;
+}
+
+.recipes-block {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+    justify-content: space-between;
+}
+
+.recipes-block-breakfast {
+    width: 540px;
+    height: 510px;
+    background-image: url(../img/bbq.jpg);
+    border-radius: 6px;
+    
+}
+
+.recipes-block-breakfast-btn {
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    width: 90px;
+    height: 25px;
+    display: block;
+    margin: 60px auto auto auto;
+}
+
+.recipes-block-breakfast-date {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.recipes-block-breakfast-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 25px;
+    /* width: 410px; */
+}
+
+.recipes-block-breakfast-name {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.recipes-block-breakfast-block {
+    margin-top: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.recipes-block-breakfast-block img {
+    margin-right: 12px;
+}
+
+.recipes-block-breakfast-block-number {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.recipes-block-2 {
+    width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recipes-block-lunch {
+    width: 540px;
+    height: 160px;
+    border-radius: 6px;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipes-block-lunch-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;    
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.recipes-block-lunch-block {
+    display: flex;
+    align-items: center;
+}
+
+.recipes-block-lunch-block-btn {
+    background: #000000;
+    mix-blend-mode: normal;
+    /* opacity: 0.3; */
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    /* line-height: 25px; */
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 6px;
+    width: 65px;
+    height: 25px;
+    margin-left: 30px;
+    margin-right: 15px;
+    border: 0;
+}
+
+.recipes-block-lunch-block-date {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: #B3B3B3;
+    margin: 0;
+}
+
+.recipes-block-lunch-block-icon {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.recipes-block-lunch-block-number {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: #D8D8D8;
+}
+
+.recipes-block-dinner {
+    width: 540px;
+    height: 150px;
+    background-image: url(../img/events-card.jpg);
+    border-radius: 6px;
+}
+
+.recipes-block-dinner-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;    
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.recipes-block-dinner-block {
+    display: flex;
+    align-items: center;
+}
+
+.recipes-block-dinner-block-btn {
+    background: #000000;
+    mix-blend-mode: normal;
+    /* opacity: 0.3; */
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    /* line-height: 25px; */
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 6px;
+    width: 65px;
+    height: 25px;
+    margin-left: 30px;
+    margin-right: 15px;
+    border: 0;
+}
+
+.recipes-block-dinner-block-date {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: #B3B3B3;
+    margin: 0;
+}
+
+.recipes-block-dinner-block-icon {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.recipes-block-dinner-block-number {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: #D8D8D8;
+}
+
+.recipes-block-sweets {
+    width: 540px;
+    height: 160px;
+    border-radius: 6px;
+    background: #34C759;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.recipes-block-sweets-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #252525;   
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.recipes-block-sweets-block {
+    display: flex;
+    align-items: center;
+}
+
+.recipes-block-sweets-block-btn {
+    background: #000000;
+    mix-blend-mode: normal;
+    /* opacity: 0.3; */
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    /* line-height: 25px; */
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 6px;
+    width: 65px;
+    height: 25px;
+    margin-left: 30px;
+    margin-right: 15px;
+    border: 0;
+}
+
+.recipes-block-sweets-block-date {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.recipes-block-sweets-block-icon {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.recipes-block-sweets-block-number {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: #1A1A1A;
+}
+
+/*---SOCIAL---*/
+
+.social {
+    margin-top: 120px;
+}
+
+.social-header {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 150px;
+    letter-spacing: 0.2em;    
+    color: #303030;
+    position: absolute;
+    text-align: center;
+    /* width: 1100px; */
+    left: 0; 
+    right: 0; 
+    margin: auto;
+}
+
+.social-header-small {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.2em;
+    color: #D9D9D9;
+    text-align: center;
+    padding-top: 50px;
+    position: relative; 
+}
+
+.social-line {
+    height: 2px;
+    display: inline-block;
+    width: 60px;
+    left: 47%;
+    right: 53%;
+    position: relative;
+    background: #34C759;
+    margin-top: 30px;
+}
+
+.social-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.social-card-block {
+    width: 350px;
+    height: 330px;
+    background: #262626;
+    border-radius: 6px;
+}
+
+.social-card-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 25px auto 25px;
+}
+
+.social-card-block-header-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    color: #BFBFBF;
+    width: 105px;
+
+}
+
+.social-card-block-header-btn {
+    width: 100px;
+    height: 40px;
+    background: #262626;
+    border: 2px solid #303030;
+    border-radius: 30px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 8px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #737373;
+}
+
+.social-card-line {
+    height: 2px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    background: #303030;
+    margin-top: 25px;
+}
+
+.social-card-main {
+    margin: 20px 15px auto 30px ;
+    padding-right: 20px;
+    overflow-y: scroll;
+    height: 180px;
+}
+
+.social-card-main-date {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #737373; 
+}
+
+.social-card-main-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.social-card-main::-webkit-scrollbar {
+    width: 4px;
+    height: 92px;
+    background: #303030;;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-radius: 100px;
+}
+
+.social-card-main::-webkit-scrollbar-track {
+    background: #262626;
+    border-radius: 100px;
+    height: 22px;
+}
+
+.social-card-main::-webkit-scrollbar-thumb {
+    background: #303030;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-radius: 100px;
+    
+}
+
+.social-card-main-email {
+    text-decoration: none;
+    list-style-type: none;
+    color: #34C759;
+}
+
+.social-card-block-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    /* width: 350px;
+    height: 360px; */
+    width: 100%;
+    height: 240px;
+    overflow-y: scroll;
+}
+
+.social-card-block-img::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* .social-card-block-img::-webkit-scrollbar-track {
+    background: inherit;
+    border-radius: 100px;
+    height: 22px;
+}
+
+.social-card-block-img::-webkit-scrollbar-thumb {
+    background: #303030;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-radius: 100px; 
+} */
+
+.social-card-block-img img {
+    width: 33.3%;
+    height: 120px;
+}
+
+.social-card-block-img-left {
+    border-bottom-left-radius: 6px;
+}
+
+.social-card-block-img-right {
+    border-bottom-right-radius: 6px;
+}
+
+/*---FOOTER---*/
+
+.footer {
+    margin-top: 120px;
+    background: #252525;
+    margin-left: -165px;
+    margin-right: -165px;
+}
+
+.favourite-food-information-footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 280px;
+    padding-right: 280px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #5e5d5d;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img {
+    margin-right: 9px;
+}
+
+.footer-logo-text {
+    color: #34C759;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.footer-text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    color: #737373; 
+    margin: 0;
+    padding-bottom: 20px;
+}
